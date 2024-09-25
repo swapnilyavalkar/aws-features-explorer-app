@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Features Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>AWS Features Explorer</h1>
+        <nav>
+            <div id="feature-selection">
+                <div class="feature-toggle">
+                    <label class="switch"><input type="checkbox" name="feature" value="upload"><span class="slider"></span></label>
+                    <span class="feature-label">Upload</span>
+                </div>
+                <div class="feature-toggle">
+                    <label class="switch"><input type="checkbox" name="feature" value="api"><span class="slider"></span></label>
+                    <span class="feature-label">API Interaction</span>
+                </div>
+                <div class="feature-toggle">
+                    <label class="switch"><input type="checkbox" name="feature" value="music"><span class="slider"></span></label>
+                    <span class="feature-label">Music Player</span>
+                </div>
+                <div class="feature-toggle">
+                    <label class="switch"><input type="checkbox" name="feature" value="video"><span class="slider"></span></label>
+                    <span class="feature-label">Video Player</span>
+                </div>
+                <div class="feature-toggle">
+                    <label class="switch"><input type="checkbox" name="feature" value="image"><span class="slider"></span></label>
+                    <span class="feature-label">Image Viewer</span>
+                </div>
+                <div class="feature-toggle">
+                    <label class="switch"><input type="checkbox" name="feature" value="analytics"><span class="slider"></span></label>
+                    <span class="feature-label">Analytics</span>
+                </div>
+                <div class="feature-toggle">
+                    <label class="switch"><input type="checkbox" name="feature" value="monitoring"><span class="slider"></span></label>
+                    <span class="feature-label">Monitoring</span>
+                </div>
+                <div class="feature-toggle">
+                    <label class="switch"><input type="checkbox" name="feature" value="all"><span class="slider"></span></label>
+                    <span class="feature-label">All Features</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Toast Notification -->
+        <div id="toast" class="toast" style="display: none;"></div>
+
+        <!-- Dynamic Section for individual feature selection -->
+        <section id="dynamic-feature" style="display:none;">
+            <h2 id="feature-title">Selected Feature</h2>
+            <div id="dynamic-content"></div>
+        </section>
+
+        <!-- All Features Section (appears when "All" is selected) -->
+        <section id="all-features" style="display:none;">
+            <!-- Upload Section -->
+            <div class="feature">
+                <h2>Upload Files</h2>
+                <input type="file" id="fileInput">
+                <input type="text" id="s3BucketUrl" placeholder="Enter S3 Bucket URL">
+                <button id="uploadBtn">Upload to S3</button>
+                <p id="uploadStatus"></p>
+                <progress id="uploadProgress" value="0" max="100" style="display: none;"></progress>
+            </div>
+
+            <!-- API Interaction Section -->
+            <div class="feature">
+                <h2>API Interaction</h2>
+                <input type="text" id="apiUrl" placeholder="Enter API Gateway URL">
+                <input type="text" id="apiInput" placeholder="Enter API data">
+                <button id="apiBtn">Submit to API Gateway</button>
+                <p id="apiResponse"></p>
+            </div>
+
+            <!-- Music Player Section -->
+            <div class="feature">
+                <h2>Music Player</h2>
+                <input type="text" id="musicUrlInput" name="musicUrl" placeholder="Enter Music File URL">
+                <audio controls="" id="musicPlayerElement">
+                    <source src="" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p id="musicStatus"></p>
+            </div>
+                        
+
+            <!-- Video Player Section -->
+            <div class="feature">
+                <h2>Video Player</h2>
+                <input type="text" id="videoUrl" placeholder="Enter Video File URL">
+                <video controls id="videoPlayer" width="600">
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p id="videoStatus"></p>
+            </div>
+
+            <!-- Image Viewer Section -->
+            <div class="feature">
+                <h2>Image Viewer</h2>
+                <input type="text" id="imageUrl" placeholder="Enter Image File URL">
+                <img id="imageViewer" src="" alt="Uploaded Image" style="max-width: 100%; height: auto;">
+                <p id="imageStatus"></p>
+            </div>
+
+            <!-- Analytics Section -->
+            <div class="feature">
+                <h2>Run Athena Queries</h2>
+                <textarea id="queryInput" placeholder="Enter your query here"></textarea>
+                <button id="queryBtn">Run Query</button>
+                <p id="queryResult"></p>
+            </div>
+
+            <!-- Monitoring Section -->
+            <div class="feature">
+                <h2>Monitoring and Alerts</h2>
+                <button id="monitoringBtn">View CloudWatch Metrics</button>
+                <p id="monitoringData"></p>
+            </div>
+        </section>
+
+        <!-- Footer for Name and Social Links -->
+        <footer>
+            <div class="developer-info">
+                <h3>Developed by Swapnil Yavalkar</h3>
+                <br>
+                <a href="https://github.com/swapnilyavalkar" target="_blank" class="social-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/swapnilyavalkar" target="_blank" class="social-link">LinkedIn</a>
+            </div>
+        </footer>
+    </main>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

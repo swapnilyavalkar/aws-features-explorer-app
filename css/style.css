@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#feature-selection {
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-toggle {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.feature-label {
+    margin-left: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #28a745;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+main {
+    padding: 20px;
+}
+
+.feature {
+    margin: 20px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Update text input size */
+input[type="text"], input[type="file"], textarea {
+    width: 50%; /* Reduce to 50% of the container width */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Ensure buttons are consistent */
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: inline-block;  /* Ensure inline behavior for button */
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+textarea {
+    width: 80%;
+    height: 50px;
+    vertical-align: middle;
+}
+
+/* Specific button styling for Athena Queries */
+.query-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: px;
+    cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.query-btn:hover {
+    background-color: #218838;
+}
+
+/* Add Flexbox to Center the Button */
+.query-container {
+    display: flex;
+    align-items: center; /* Align vertically */
+    justify-content: start; /* Align horizontally */
+}
+
+audio, video {
+    margin-top: 10px;
+}
+
+#toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+    opacity: 0.9;
+}
+
+.toast.success {
+    background-color: green;
+}
+
+.toast.error {
+    background-color: red;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.developer-info h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.social-link {
+    background-color: #0073b1;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.social-link:hover {
+    background-color: #005582;
+}
+
+.social-link:first-of-type {
+    background-color: #24292e;
+}
+
+.social-link:first-of-type:hover {
+    background-color: #1a1f24;
+}
