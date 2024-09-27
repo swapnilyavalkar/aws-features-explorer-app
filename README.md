@@ -1,6 +1,6 @@
 # AWS Features Explorer App 🚀
 
-Welcome to the **AWS Features Explorer App**, your ultimate tool for exploring and interacting with various AWS services in real-world projects. This app serves as a hands-on explorer to simplify AWS integrations and feature usage. It is the go-to application for implementing all the projects mentioned in the [AWS DevOps Real-World Projects](https://github.com/swapnilyavalkar/AWS-DevOps-RealWorld-Projects) repository.
+Welcome to the **AWS Features Explorer App**, your ultimate tool for exploring and interacting with various AWS services in real-world projects. This app serves as a hands-on explorer to simplify AWS integrations and feature usage. It is the go-to application for implementing all the projects mentioned in the [AWS DevOps Real-World Projects](https://github.com/swapnilyavalkar/aws-DevOps-RealWorld-Projects) repository.
 
 ## 🎯 Overview
 
@@ -47,7 +47,7 @@ To get started with the **AWS Features Explorer App**, clone the repository from
 ```bash
 
 # Clone repository
-git clone https://github.com/swapnilyavalkar/AWS-Features-Explorer-App.git
+git clone https://github.com/swapnilyavalkar/aws-Features-Explorer-App.git
 cd AWS-Features-Explorer-App
 
 # Update and install Nginx
@@ -102,7 +102,7 @@ You can also use the Docker image of this app to run it in any environment that 
 
 ### 🌟 Example Use Cases
 
-Here are a couple of examples of how you can use this app for implementing real-world projects from the [AWS DevOps Real-World Projects](https://github.com/swapnilyavalkar/AWS-DevOps-RealWorld-Projects) repository:
+Here are a couple of examples of how you can use this app for implementing real-world projects from the [AWS DevOps Real-World Projects](https://github.com/swapnilyavalkar/aws-DevOps-RealWorld-Projects) repository:
 
 #### 1. **S3 Upload for Project X:**
    - Use the **File Upload to S3** feature to directly upload files from the UI to an S3 bucket as part of your project's storage solution.
@@ -124,7 +124,7 @@ Here are a couple of examples of how you can use this app for implementing real-
 - **Simple and Efficient**: Minimal setup required to interact with complex AWS services.
 - **Dynamic and Versatile**: Built with a focus on real-world AWS DevOps use cases.
 - **Docker-Ready**: Easily deploy and scale using the Docker image.
-- **Supports Multiple Projects**: Directly integrates with all projects in the [AWS DevOps Real-World Projects](https://github.com/swapnilyavalkar/AWS-DevOps-RealWorld-Projects) repository.
+- **Supports Multiple Projects**: Directly integrates with all projects in the [AWS DevOps Real-World Projects](https://github.com/swapnilyavalkar/aws-DevOps-RealWorld-Projects) repository.
 
 ### 📸 Screenshots
 
