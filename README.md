@@ -21,7 +21,7 @@ Whether you're working on infrastructure projects, deploying microservices, or r
 ### 🗂️ Directory Structure
 
 ```bash
-AWS-FEATURES-EXPLORER-APP
+aws-features-explorer-app
 │
 ├── css/
 │   └── style.css             # Styles for the app
@@ -48,7 +48,7 @@ To get started with the **AWS Features Explorer App**, clone the repository from
 
 # Clone repository
 git clone https://github.com/swapnilyavalkar/aws-features-explorer-app.git
-cd AWS-Features-Explorer-App
+cd aws-features-explorer-app
 
 # Update and install Nginx
 sudo apt update
@@ -63,7 +63,7 @@ sudo ufw allow 'Nginx Full'
 
 # Remove default Nginx content and copy your app files
 sudo rm -rf /var/www/html/*
-sudo cp -r /path/to/AWS-Features-Explorer-App/* /var/www/html/
+sudo cp -r /path/to/aws-features-explorer-app/* /var/www/html/
 
 # Set correct permissions
 sudo chown -R www-data:www-data /var/www/html
